@@ -41,6 +41,15 @@ code {
   padding: 0.7rem;
 }
 
+
+.viaje img{
+  width: 70%;
+  margin-bottom: 1rem;
+}
+.viaje h3{
+  font-size: 1rem;
+  padding: 0.7rem;
+}
 @media (min-aspect-ratio:16/9) {
   .background-clip, .register-container{
     width: 100%;

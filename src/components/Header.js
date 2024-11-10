@@ -1,6 +1,20 @@
-
+import { EditablePreview } from "@chakra-ui/react";
+import axios from "axios";
+import { useState } from "react";
 export default function Header({text = "text-white-50"}){
-    
+ /*    const [userLogged,setUserLogged] = useState()
+    const fetchSession = async () => {
+        try {
+          const res = await axios.get("http://localhost:3001", { withCredentials: true });
+          console.log(res.data);
+          
+          setUserLogged(res.data.sesion.userLogged);
+        } catch (err) {
+          console.log(err);
+        }
+      };
+      fetchSession();
+ */
     return(
         <div className="d-flex justify-content-center">
         <nav className="navbar navbar-expand-lg">
@@ -28,7 +42,7 @@ export default function Header({text = "text-white-50"}){
                   </a>
                 </li>
                 <li className="nav-item  px-5 pt-2">
-                  <a className={`nav-link active ${text}`} href="#">
+                  <a className={`nav-link active ${text}`} href="/viajes">
                     Viajes disponibles
                   </a>
                 </li>
@@ -41,7 +55,7 @@ export default function Header({text = "text-white-50"}){
                   </a>
                 </li>
                 <li className="nav-item  px-5 pt-2">
-                  <a className={`nav-link active ${text}`} href="#">
+                  <a className={`nav-link active ${text}`} href="/login">
                     Log in
                   </a>
                 </li>
@@ -49,7 +63,8 @@ export default function Header({text = "text-white-50"}){
                   <a className={`nav-link active ${text}`} href="/register">
                     Register
                   </a>
-                </li>
+                </li> 
+               
                
               </ul>
             </div>

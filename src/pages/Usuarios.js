@@ -43,11 +43,11 @@ export default function Usuarios() {
 
         <div className="usuarios row">
           {usuarios.map((usuario) => (
-            <div className="usuario shadow mb-3 p-4  col-md-4" key={usuario.id}>
+            <div className="usuario shadow mb-3 p-4 col-md-4" key={usuario.id}>
               {usuario.image ? (
                 <img src={`http://localhost:3001/${usuario.image}`}></img>
               ) : (
-                <img src="http://localhost:3001/uploads/dog-driving.jpg"></img>
+                <img src="http://localhost:3001/uploads/dog-driving-meme-1.jpg"></img>
               )}
               <h3>
                 <b>Nombre:</b> {usuario.nombre}

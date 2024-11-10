@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import Hero from "../components/Hero";
 import { Button } from "@chakra-ui/react";
+import Footer from "../components/Footer";
 
 export default function Main() {
   /*  const [mensaje, setMensaje] = useState([])
@@ -43,7 +44,7 @@ export default function Main() {
               fontWeight: "300",
               fontStyle: "normal",
               lineHeight: "2",
-              fontSize: "1.5rem"
+              fontSize: "1.5rem",
             }}
           >
             Es una plataforma móvil especializada en la organización eficiente
@@ -63,8 +64,11 @@ export default function Main() {
             backgroundColor: "#D8DBBD",
           }}
         >
-          <div className="px-5 d-flex flex-column align-items-center " style={{maxWidth: "45vw", minHeight: "40vh"}}>
-          <h1 className="text-center p-5">
+          <div
+            className="px-5 d-flex flex-column align-items-center "
+            style={{ maxWidth: "45vw", minHeight: "40vh" }}
+          >
+            <h1 className="text-center p-5">
               ¿Buscas acompañante para tu viaje?
             </h1>
             <p
@@ -78,11 +82,7 @@ export default function Main() {
               gente nueva, podes <b>publicar</b> tu viaje para que todos los
               usuarios se puedan sumar
             </p>
-            <button
-              className="btn my-3 bg-white"
-            >
-              Crear viaje
-            </button>
+            <button className="btn my-3 bg-white">Crear viaje</button>
           </div>
         </div>
 
@@ -92,8 +92,11 @@ export default function Main() {
             backgroundColor: "#2A3663",
           }}
         >
-          <div className="px-5 d-flex flex-column align-items-center " style={{maxWidth: "45vw", minHeight: "40vh"}}>
-          <h1 className="text-center p-5 text-white">
+          <div
+            className="px-5 d-flex flex-column align-items-center "
+            style={{ maxWidth: "45vw", minHeight: "40vh" }}
+          >
+            <h1 className="text-center p-5 text-white">
               ¿Necesitas viajar a algun lado y conocer gente nueva?
             </h1>
             <p
@@ -106,18 +109,30 @@ export default function Main() {
               a vos, ver el perfil del conductor, conocer sus preferencias y
               sumarte a una experiencia nueva!
             </p>
-            <button
-              className="btn my-3 bg-white"
-            >
-            <a href="/usuarios" className="text-decoration-none text-dark">
-              Ver todos los usuarios
+            <button className="btn my-3 bg-white">
+              <a href="/usuarios" className="text-decoration-none text-dark">
+                Ver todos los usuarios
               </a>
             </button>
           </div>
         </div>
       </div>
 
-    
+      <div className="container my-5">
+        <div className="row d-flex justify-content-center align-items-center">
+          <div className="col-4 px-0 d-flex justify-content-end">
+            <img src="/fotos/car-icon.jpg" style={{ width: "75%" }}></img>
+          </div>
+
+          <div className="col-4 d-flex flex-column align-items-center">
+            <h2>Mira todos los proximos viajes disponibles aqui</h2>
+            <a href="/viajes">
+            <button className="btn my-3" style={{backgroundColor : "#FAF6E3", width: "100%"}}>Ver viajes</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* <div className="d-flex flex-column align-items-center my-5 p-4">
           <h1 className="py-5 display-3 text-center">Conoce algunos de los viajes disponibles</h1>
           <h3
@@ -138,6 +153,8 @@ export default function Main() {
           </h3>
         </div>
  */}
+      <Footer/>
     </div>
+
   );
 }
