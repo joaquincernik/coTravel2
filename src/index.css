@@ -1,13 +1,55 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Poppins';
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*navbar */
+.navbar a {
+  font-size: "4rem";
+}
+
+.register-container{
+  background-image: url('../public/fotos/register2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Color negro con 50% de opacidad */
+  background-blend-mode: overlay;
+}
+
+.usuario img{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 2%;
+  margin-bottom: 1rem;
+}
+.usuario h3{
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+@media (min-aspect-ratio:16/9) {
+  .background-clip, .register-container{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio:16/9) {
+  .background-clip, .register-container{
+    width: auto;
+    height: 100%;
+  }
 }
