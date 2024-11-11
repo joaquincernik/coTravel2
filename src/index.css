@@ -64,6 +64,20 @@ code {
   height: 70%;
   border-radius: 2%;
 }
+
+.subsistemas div{
+  padding: 3rem;
+}
+
+.subsistemas i{
+  font-size: 1.8rem;
+  color: #D8DBBD;
+  padding: 1rem;
+}
+
+.subsistemas h3{
+  text-align: center;
+}
 @media (min-aspect-ratio:16/9) {
   .background-clip, .register-container{
     width: 100%;

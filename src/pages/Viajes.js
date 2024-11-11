@@ -47,10 +47,25 @@ export default function Viajes() {
         </div>
 
         <div className="viajes row">
+        {viajes.length === 0 && (
+  <>
+    <iframe
+      src="https://giphy.com/embed/CM1rHbKDMH2BW"
+      width={480}
+      height={360}
+      style={{height: "50vh"}}
+      frameBorder={0}
+      className="giphy-embed"
+      allowFullScreen=""
+    />
+    <h1 className="text-center p-5">No se encontraron viajes con ese origen :(</h1>
+   
+  </>
+)}
+
           {viajes.map((viaje) => (
             <div className="viaje shadow mb-3 p-4  col-md-4" key={viaje.id}>
             <h2 className="text-center pb-3">Viaje</h2>
-
               <h3>
                 <b>Origen:</b> {viaje.lugarOrigen}
               </h3>
