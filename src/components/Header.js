@@ -50,7 +50,7 @@ export default function Header({text = "text-white-50"}){
                   <a className={`nav-link active ${text}`} href="/usuarios">Buscar usuarios</a>
                 </li>
                 <li className="nav-item  px-5 pt-2">
-                  <a className={`nav-link active ${text}`} href="#">
+                  <a className={`nav-link active ${text}`} href="/nuestra-historia">
                     Nuestra historia
                   </a>
                 </li>
